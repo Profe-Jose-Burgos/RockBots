@@ -1,0 +1,231 @@
+{
+    "intents": [
+        {
+            "tag": "saludos",
+            "patterns": [
+                "hola",
+                "buenos dias",
+                "buenas tardes",
+                "como estas?",
+                "tengo una consulta",
+                "necesito ayuda",
+                "que me puedes ofrecer?",
+                "que haces?"
+            ],
+            "responses": [
+                "Hola, soy Rockie!! un asistente virtual, en qu\u00e9 puedo ayudarte? \n                                 Si desea conocer lo que puedo ofrecer env\u00ede *1* "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "despedidas",
+            "patterns": [
+                "chao",
+                "adios",
+                "hasta luego",
+                "nos vemos",
+                "hasta la proxima"
+            ],
+            "responses": [
+                "Hasta luego que tenga un buen dia, gracias por preferirnos!"
+            ],
+            "context": []
+        },
+        {
+            "tag": "agradecimientos",
+            "patterns": [
+                "gracias",
+                "muchas gracias",
+                "mil gracias",
+                "muy amable",
+                "se lo agradezco",
+                "fue de ayuda",
+                "gracias por la ayuda",
+                "muy agradecido",
+                "gracias por su tiempo"
+            ],
+            "responses": [
+                "De nada",
+                "Feliz por ayudarlo",
+                "Gracias a usted",
+                "Estamos para servirle",
+                "Fue un placer",
+                "Un gusto comunicarme contigo"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Afirmaci\u00f3n",
+            "patterns": [
+                "Si",
+                "",
+                "S\u00ed",
+                "Es correcto",
+                "Listo",
+                "Perfecto",
+                "Maravilloso",
+                "genial",
+                "excelente",
+                "correcto",
+                "Ok",
+                "Est\u00e1 bien",
+                "esta bien"
+            ],
+            "responses": [
+                ""
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Negaci\u00f3n",
+            "patterns": [
+                "No",
+                "Es incorrecto",
+                "No, gracias",
+                "No gracias",
+                "No me gusta",
+                "Es erroneo",
+                "Tiene un error",
+                "Falta",
+                "incorrecto"
+            ],
+            "responses": [
+                ""
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Agendar cita",
+            "patterns": [
+                "Quisiera agendar una cita",
+                "Puedo agendar una cita?",
+                "Quiero agendar cita",
+                "Quiero agendar una cita"
+            ],
+            "responses": [
+                "Para agendar una cita indique el servicio que desea:\n                 \n                                1. Asesor\u00eda de compras\n                                2. Atenci\u00f3n al cliente\n                                 "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Modificar Cita",
+            "patterns": [
+                "Quiero modificar mi cita",
+                "Puedo modificar mi cita?",
+                "Modificar cita"
+            ],
+            "responses": [
+                "Para modificar su cita ingrese el id dado al momento de generar su cita.\n                                  "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Cancelar Cita",
+            "patterns": [
+                "Quiero cancelar mi cita",
+                "Puedo cancelar mi cita?",
+                "Cancelar cita"
+            ],
+            "responses": [
+                " Para modificar su cita ingrese el id de cita dado al momento de generar su cita\n                                  "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Ubicaci\u00f3n",
+            "patterns": [
+                "Ubicaci\u00f3n",
+                "D\u00f3nde se ubican?",
+                "Tienen un local f\u00edsico?"
+            ],
+            "responses": [
+                " Estamos ubicado en Costa del Este, Ciudad de Panam\u00e1, Panam\u00e1\n                                   Aqu\u00ed el link de nuestra ubicaci\u00f3n exacta: \n                                  "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "norespuesta",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "No puedo reponder a tu consulta, podr\u00edas ser m\u00e1s claro?",
+                "Disculpa no entiendo tu solicitud, podr\u00edas ser m\u00e1s claro?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Servicio",
+            "patterns": [
+                "Que tipo de servicio ofrecen?",
+                "Servicios",
+                "Que hacen?",
+                "A qu\u00e9 se dedican"
+            ],
+            "responses": [
+                "Nuestra empresa SIC-Panam\u00e1 se encarga de transportar cualquier producto que necesites a nivel mundial, \n                            para bridarle a nuestros clientes contamos con un conjunto de herramientas que le permita escoger la \n                            opci\u00f3n que m\u00e1s se adaptan a ellos, como asesor\u00edas directa o online,cotizaci\u00f3n de precios y mucho m\u00e1s"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Confrontaci\u00f3n con el chatbot",
+            "patterns": [
+                "Eres un chatbot",
+                "Estoy escribiendole a un agente virtual?",
+                "Eres una persona real?"
+            ],
+            "responses": [
+                "Soy un agente virtual construido con tecnolog\u00eda"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Cotizaci\u00f3n de precios",
+            "patterns": [
+                "Quiero cotizar precios",
+                "Deseo cotizar precios",
+                "Cotizar precios"
+            ],
+            "responses": [
+                "Para cotizar precios, indiquenos el paquete que desea. Si desea conocer cu\u00e1les osn env\u00ede *1*"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Men\u00fa de opciones",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "1. Cita de asesor\u00eda\n                           2. Cotizar precios\n                           3. Env\u00edo de paquetes"
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}
