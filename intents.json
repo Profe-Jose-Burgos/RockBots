@@ -4,13 +4,36 @@
             "tag": "saludos",
             "patterns": [
                 "hola",
+                "holi",
+                "como vas?",
                 "buenos dias",
+                "que pasa?",
                 "buenas tardes",
+                "como andas?",
+                "alo",
+                "tengo una duda",
+                "una duda",
+                "duda",
+                "dudita",
                 "como estas?",
+                "buena",
+                "buen dia",
+                "consulta",
+                "consultita",
                 "tengo una consulta",
+                "buenas noches",
+                "tengo una dudita",
                 "necesito ayuda",
+                "hello",
+                "que tal?",
+                "necesito que me ayudes",
+                "una consulta",
                 "que me puedes ofrecer?",
-                "que haces?"
+                "buenas",
+                "que haces?",
+                "holis",
+                "holu",
+                "que hay?"
             ],
             "responses": [
                 "Hola, soy Rockie!! un asistente virtual, en qu\u00e9 puedo ayudarte? \n                                 Si desea conocer lo que puedo ofrecer env\u00ede *1* "
@@ -26,10 +49,16 @@
                 "adios",
                 "hasta luego",
                 "nos vemos",
-                "hasta la proxima"
+                "bye",
+                "chaito",
+                "hasta la proxima",
+                "hasta nunca",
+                "hasta la vista"
             ],
             "responses": [
-                "Hasta luego que tenga un buen dia, gracias por preferirnos!"
+                "Hasta luego que tenga un buen dia",
+                " Gracias por preferirnos!",
+                "Hasta la proxima, tenga buen dia"
             ],
             "context": []
         },
@@ -37,7 +66,12 @@
             "tag": "agradecimientos",
             "patterns": [
                 "gracias",
+                "muchisimas gracias",
+                "me ayudaste mucho",
+                "fuiste de ayuda",
                 "muchas gracias",
+                "demasiado util",
+                "dale, gracias",
                 "mil gracias",
                 "muy amable",
                 "se lo agradezco",
@@ -52,6 +86,8 @@
                 "Gracias a usted",
                 "Estamos para servirle",
                 "Fue un placer",
+                "A la orden",
+                "Con gusto",
                 "Un gusto comunicarme contigo"
             ],
             "context": [
@@ -64,6 +100,10 @@
                 "Si",
                 "",
                 "S\u00ed",
+                "Asi mismito",
+                "asi mismito",
+                "ecolecua",
+                "Exacto",
                 "Es correcto",
                 "Listo",
                 "Perfecto",
@@ -93,7 +133,11 @@
                 "Es erroneo",
                 "Tiene un error",
                 "Falta",
-                "incorrecto"
+                "incorrecto",
+                "Asi no",
+                "Esta mal",
+                "Falso",
+                "No es cierto"
             ],
             "responses": [
                 ""
@@ -107,11 +151,11 @@
             "patterns": [
                 "Quisiera agendar una cita",
                 "Puedo agendar una cita?",
-                "Quiero agendar cita",
+                "Agendar citaQuiero agendar cita",
                 "Quiero agendar una cita"
             ],
             "responses": [
-                "Para agendar una cita indique el servicio que desea:\n                 \n                                1. Asesor\u00eda de compras\n                                2. Atenci\u00f3n al cliente\n                                 "
+                "'Para agendar su cita coloque el n\u00famero de unas de las modalidades disponible: 1. Virtual 2. Presencial'\n                                 "
             ],
             "context": [
                 ""
@@ -122,7 +166,20 @@
             "patterns": [
                 "Quiero modificar mi cita",
                 "Puedo modificar mi cita?",
-                "Modificar cita"
+                "Modificame la cita",
+                "Modifica",
+                "Puedes modificarla?",
+                "quiero que la cambies",
+                "Modificar cita",
+                "Modifica la cita",
+                "Modificar",
+                "Cambia la cita",
+                "Cambiame la cita",
+                "Me puedes cambiar la cita?",
+                "Cambiar fecha de la cita",
+                "Cambiar hora de la cita",
+                "Modificar hora de la cita",
+                "Modificar fecha de la cita"
             ],
             "responses": [
                 "Para modificar su cita ingrese el id dado al momento de generar su cita.\n                                  "
@@ -136,7 +193,15 @@
             "patterns": [
                 "Quiero cancelar mi cita",
                 "Puedo cancelar mi cita?",
-                "Cancelar cita"
+                "Me cancelas la cita",
+                "Cancelar",
+                "Cancela la cita",
+                "Cancelar cita",
+                "Mejor cancelala",
+                "Cancela mejor",
+                "cancela",
+                "Cancelala",
+                "Cancelalo"
             ],
             "responses": [
                 " Para modificar su cita ingrese el id de cita dado al momento de generar su cita\n                                  "
@@ -146,11 +211,80 @@
             ]
         },
         {
+            "tag": "Garantia",
+            "patterns": [
+                "Tienen garantia?",
+                "Garantia del producto?",
+                "Que periodo de garantia tiene?",
+                "Cuanto de garantia tiene?",
+                "Cuanto dura su garantia?",
+                "Cuanta garantia tiene?",
+                "Esto que garantia tiene?",
+                "Cuanto dura la garantia?",
+                "Garantia",
+                "Mi pedido vino defectuoso",
+                "El producto vino estropeado",
+                "Quiero reclamar",
+                "Reclamar",
+                "Reclamo",
+                "Devolucion",
+                "Devolver",
+                "Quiero devolver",
+                "Voy a devolverlo"
+            ],
+            "responses": [
+                " Todo nuestros productos tienen una garantia de un a\u00f1o si quiere hacer un reclamo puede llamar a nuestro soporte\n                                  "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Pagos",
+            "patterns": [
+                "Como puedo pagar?",
+                "Como pago?",
+                "Donde pago?",
+                "Donde le pago?",
+                "Como le pago?",
+                "A donde paso a pagarle?",
+                "Puedo pagar con paypal?",
+                "El pago?",
+                "A donde voy a pagar?",
+                "A donde me dirijo a pagar?",
+                "Formas de pago",
+                "Como puedo hacer el pago",
+                "Pagar"
+            ],
+            "responses": [
+                " En nuestra empresa contamos con diferentes formas de pago puede utilizar la que m\u00e1s comoda le parezca:\n                 -PayPal\n                 -Tarjetas visa \u00f3 mastercard\n                 -Tarjetas de regalo\n                                  "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
             "tag": "Ubicaci\u00f3n",
             "patterns": [
                 "Ubicaci\u00f3n",
+                "Donde los encuentro?",
+                "Donde los puedo encontrar",
+                "Donde esta el local?",
+                "Direccion del local?",
                 "D\u00f3nde se ubican?",
-                "Tienen un local f\u00edsico?"
+                "Direccion",
+                "Indicaciones de como llegar",
+                "Indicaciones",
+                "Como llego alla?",
+                "Como llego?",
+                "Tienen un local f\u00edsico?",
+                "Mandeme la ubicacion",
+                "A que ubicacion voy?",
+                "A que lugar exacto tengo que ir?",
+                "A donde tengo que ir?",
+                "Me pasas la ubicacion",
+                "Me pasas la direccion",
+                "Me manda la ubicacion "
             ],
             "responses": [
                 " Estamos ubicado en Costa del Este, Ciudad de Panam\u00e1, Panam\u00e1\n                                   Aqu\u00ed el link de nuestra ubicaci\u00f3n exacta: \n                                  "
@@ -176,7 +310,13 @@
             "tag": "Servicio",
             "patterns": [
                 "Que tipo de servicio ofrecen?",
+                "Que hace su local?",
+                "Que tienen en ese local?",
                 "Servicios",
+                "Que ofrecen?",
+                "Que servicios tienen?",
+                "Digame los servicios",
+                "Que hay en la tienda?",
                 "Que hacen?",
                 "A qu\u00e9 se dedican"
             ],
@@ -205,8 +345,15 @@
             "tag": "Cotizaci\u00f3n de precios",
             "patterns": [
                 "Quiero cotizar precios",
+                "Puedes hacer la cotizacion?",
+                "Haz la cotizacion",
                 "Deseo cotizar precios",
-                "Cotizar precios"
+                "Cotizame los precios",
+                "Cotiza",
+                "Cotizame",
+                "CotizarCotizar precios",
+                "Cotizacion",
+                "Puedes cotizarme los precios?"
             ],
             "responses": [
                 "Para cotizar precios, indiquenos el paquete que desea. Si desea conocer cu\u00e1les osn env\u00ede *1*"
@@ -221,7 +368,7 @@
                 ""
             ],
             "responses": [
-                "1. Cita de asesor\u00eda\n                           2. Cotizar precios\n                           3. Env\u00edo de paquetes"
+                "1. Cita de asesor\u00eda\n                           2. Cotizar precios\n                           3. Env\u00edo de paquetes\n                           4. Preguntas frecuentes"
             ],
             "context": [
                 ""

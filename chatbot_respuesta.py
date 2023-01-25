@@ -2,18 +2,13 @@ import json
 import pickle 
 import nltk
 import numpy as np
-
 from tensorflow.keras.models import load_model
 from nltk.stem import SnowballStemmer
 import random
 
 
 
-ignore_words= ["?","¿","!","¡","."]
-model=load_model('bot_model.h5')
-biblioteca=json.loads(open('intents.json').read())
-bolsaPalabras=pickle.load(open('bolsaPalabras.pkl','rb'))
-clases=pickle.load(open('clases.pkl','rb'))
+stemmer = SnowballStemmer('spanish')
 
 
 def limpiarentrada(entradaUsuario):
@@ -43,7 +38,6 @@ def obt_tag(vectorentrada,LIMITE=0):
     vector_salida=[[i,r] for i,r in enumerate(vector_salida) if r > LIMITE]
 
     vector_salida.sort(key=lambda x: x[1],reverse=True)
-    print(vector_salida)
 
     list_etiquetas=[]
 
@@ -54,19 +48,18 @@ def obt_tag(vectorentrada,LIMITE=0):
 
 
 def obt_respuesta(list_etiquetas,biblioteca):
-    etiqueta=list_etiquetas[0]['intent']
+    etiqueta = list_etiquetas[0]['intent']
 
-    lista_diccionarios=biblioteca['intents']
+    listadediccionarios = biblioteca['intents']
 
-    for diccionario in lista_diccionarios:
+    for dicionario in listadediccionarios:
 
-        if etiqueta==diccionario['tag']:
-            list_respuestas=diccionario['responses']
-            respuesta=random.choice(list_respuestas)
-
+        if etiqueta == dicionario['tag']:
+            listaDeRespuestas = dicionario['responses']            
+            respuesta = random.choice(listaDeRespuestas)
             break
-    
     return respuesta
+
 
 def chatbot_respuesta(entradaUsuario):
     vector_entrada=convVector(entradaUsuario,bolsaPalabras)
@@ -74,3 +67,10 @@ def chatbot_respuesta(entradaUsuario):
     respuesta=obt_respuesta(list_etiquetas,biblioteca)
     intencion=list_etiquetas[0]['intent']
     return respuesta,intencion
+
+
+ignore_words= ["?","¿","!","¡","."]
+model=load_model('bot_model.h5')
+biblioteca=json.loads(open('intents.json').read())
+bolsaPalabras=pickle.load(open('bolsaPalabras.pkl','rb'))
+clases=pickle.load(open('clases.pkl','rb'))
