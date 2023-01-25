@@ -204,7 +204,7 @@
                 "Cancelalo"
             ],
             "responses": [
-                " Para modificar su cita ingrese el id de cita dado al momento de generar su cita\n                                  "
+                " Para cancelar su cita ingrese el id de cita dado al momento de generar su cita\n                                  "
             ],
             "context": [
                 ""
@@ -233,7 +233,7 @@
                 "Voy a devolverlo"
             ],
             "responses": [
-                " Todo nuestros productos tienen una garantia de un a\u00f1o si quiere hacer un reclamo puede llamar a nuestro soporte\n                                  "
+                " Todo nuestros productos tienen una garantia de un a\u00f1o si quiere hacer un reclamo puede llamar a nuestro soporte soporte@gmail.com\n                                  "
             ],
             "context": [
                 ""
@@ -299,7 +299,7 @@
                 ""
             ],
             "responses": [
-                "No puedo reponder a tu consulta, podr\u00edas ser m\u00e1s claro?",
+                "No puedo reponder a tu consulta, podr\u00edas ser m\u00e1s claro? o escribe una de las siguiente opciones:\n                 *Servicio \n                 *Ubicaci\u00f3n\n                 *Agendar cita\n                 *Cancelar cita\n                 *Modificar cita\n                 *Pagos\n                 *Cotizaci\u00f3n de presupuestos\n                 *Garant\u00eda\n                 *Reclamo\n                 ",
                 "Disculpa no entiendo tu solicitud, podr\u00edas ser m\u00e1s claro?"
             ],
             "context": [
@@ -342,7 +342,7 @@
             ]
         },
         {
-            "tag": "Cotizaci\u00f3n de precios",
+            "tag": "Cotizaci\u00f3n de presupuesto",
             "patterns": [
                 "Quiero cotizar precios",
                 "Puedes hacer la cotizacion?",
@@ -353,22 +353,12 @@
                 "Cotizame",
                 "CotizarCotizar precios",
                 "Cotizacion",
-                "Puedes cotizarme los precios?"
+                "Puedes cotizarme los precios?",
+                "Quiero cotizar presupuesto",
+                "cotizar presupuesto"
             ],
             "responses": [
-                "Para cotizar precios, indiquenos el paquete que desea. Si desea conocer cu\u00e1les osn env\u00ede *1*"
-            ],
-            "context": [
-                ""
-            ]
-        },
-        {
-            "tag": "Men\u00fa de opciones",
-            "patterns": [
-                ""
-            ],
-            "responses": [
-                "1. Cita de asesor\u00eda\n                           2. Cotizar precios\n                           3. Env\u00edo de paquetes\n                           4. Preguntas frecuentes"
+                "Para cotizar precios, indiquenos el paquete que desea. M\u00e1s detalle en la imagen adjunta :D"
             ],
             "context": [
                 ""
